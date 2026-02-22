@@ -239,12 +239,8 @@ header ul li a i:hover{
 
 @media only screen and (min-width: 2600px) {
   .card{
-    width: 34rem;
-  }
-}
-@media only screen and (min-width: 4000px) {
-  .card{
-    width: 45rem;
+    width: 20%;
+    height: 41.5vh;
   }
 }
 @media only screen and (max-width: 600px) {
