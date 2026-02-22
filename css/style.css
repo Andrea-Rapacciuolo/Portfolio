@@ -190,8 +190,9 @@ header ul li a i:hover{
 }
 
 .card{
+    height: 493px;
     width: 26rem;
-    height: fit-content;
+    /* height: fit-content; */
     background-color: #1E293B;
     color: #fff;
 }
@@ -225,6 +226,12 @@ header ul li a i:hover{
 
 .full_width{
     width: 100%;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
