@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: all 0.4s ease;
 }
 body{
     background-color: #0F172A;
@@ -31,9 +32,9 @@ a{
 
 header{
     width: 100%;
-    /* height: 300px; */
+    height: 4vw;
     background-color: #020617;
-    font-size: 36px;
+    font-size: 1.76vw;
     font-family: "Montserrat";
     font-weight: 600;
     border-bottom: #fff solid 1px;
@@ -46,7 +47,7 @@ header{
 }
 
 header ul{
-    font-size: 20px;
+    font-size: 1vw;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -75,7 +76,7 @@ header ul li a i:hover{
 }
 
 .footer div{
-    width: 20%;
+    width: 50%;
     display: flex;
     /* gap: 5px; */
     align-items: center;
@@ -105,7 +106,7 @@ header ul li a i:hover{
 
 .main{
     width: calc(100% - 40px);
-    height: 485px;
+    height: 23vw;
     margin: 20px auto;
     /* height: 300px; */
     /* background-color: #fff; */
@@ -130,16 +131,12 @@ header ul li a i:hover{
 
 .main .title{
     font-weight: 600;
-    font-size: 48px;
+    font-size: 2.25vw;
 }
 
 .main .subtitle{
     font-weight: 500;
-    font-size: 24px;
-}
-
-.main_button_color{
-    background-color: #2194C7;
+    font-size: 1.175vw;
 }
 
 .cards_box{
@@ -160,7 +157,7 @@ header ul li a i:hover{
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    font-size: 24px;
+    font-size: 1.18vw;
     font-weight: 500;
     padding: 40px 0;
     text-align: center;
@@ -185,6 +182,10 @@ header ul li a i:hover{
 }
 
 /* stilizzazione Bootstrap */
+.button_main{
+    font-size: 1vw;
+}
+
 .bold{
     font-weight: bold;
 }
@@ -236,18 +237,87 @@ header ul li a i:hover{
 
 
 /* Responsive */
-
-@media only screen and (min-width: 2600px) {
-  .card{
-    width: 20%;
-    height: 41.5vh;
-  }
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1060px) {
   header{
-    font-size: 5vw;
+    font-size: 2vw;
+    height: 4.5vw;
   }
   header i{
-    font-size: 4.6vw;
+    font-size: 1.6vw;
+  }
+  .main .title{
+    font-size: 48px;
+  }
+  .main .subtitle{
+    font-size: 24px;
+  }
+  .main{
+    height: 400px;
+  }
+  .card{
+    width: 28rem;
+    height: 520px;
+  }
+  .cards_box .separator{
+    font-size: 24px;
+  }
+  .button_main{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  header{
+    font-size: 4vw;
+    height: 10vw;
+  }
+  header i{
+    font-size: 3.6vw;
+  }
+  .main .title{
+    font-size: 48px;
+  }
+  .main .subtitle{
+    font-size: 24px;
+  }
+  .main{
+    height: 400px;
+  }
+  .cards_box .separator{
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header{
+    font-size: 4vw;
+    height: 10vw;
+  }
+  header i{
+    font-size: 3.6vw;
+  }
+  .main .title{
+    font-size: 36px;
+  }
+  .main .subtitle{
+    font-size: 20px;
+  }
+  .main{
+    height: 400px;
+  }
+  .cards_box .separator{
+    font-size: 24px;
+  }
+  .footer div{
+    font-size: 3vw;
+  }
+  .button_main{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .button_main{
+    font-size: 12px;
   }
 }
